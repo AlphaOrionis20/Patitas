@@ -19,8 +19,8 @@ export default function Login() {
         <img src={fotoInicio} />
       </div>
       <div className="formulario">
-        <Input value={login} setValue={setLogin} label="Login" placeholder="Digite um" id="nome" img={cat} />
-        <Input value={senha} setValue={setSenha} label="Senha" placeholder="Digite um" id="nome" img={lock} /> 
+        <Input value={login} setValue={setLogin} label="Login" placeholder="Digite um" id="nome" img={cat} type='email' />
+        <Input value={senha} setValue={setSenha} label="Senha" placeholder="Digite um" id="nome" img={lock} type='password' /> 
         <p className="esqueciSenha">Esqueceu sua senha?</p>
       </div>
       <div className="botaoConteiner">

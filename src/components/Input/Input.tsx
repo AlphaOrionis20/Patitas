@@ -9,9 +9,10 @@ interface inputInterface {
     id: string;
     value: string;
     setValue: React.Dispatch<React.SetStateAction<string>>;
+    type?:string;
 }
 
-const Input = ({img,placeholder,label,id,value,setValue}:inputInterface) => {
+const Input = ({img,placeholder,label,id,value,setValue,type="text"}:inputInterface) => {
   return (
     <div className='caixaInput'>
         <label className='labelInput' htmlFor={id}>{label}</label>
