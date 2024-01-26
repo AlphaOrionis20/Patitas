@@ -1,0 +1,14 @@
+.botao{
+    all: unset;
+    max-width: 100%;
+    display: flex;
+    background-color: #E97B0C;
+    color: #E6E8E9;
+    padding: 10px 40px 10px 40px;
+    border-radius: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

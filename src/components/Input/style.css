@@ -1,0 +1,35 @@
+.caixaInput{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.cat{
+    width: 23px;
+    height: 23px;
+}
+.paddingInput{
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+}
+.inputConteiner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #053d58cc;
+    padding-bottom: 10px;
+}
+.input{
+    all:unset;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.labelInput{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid #053d58cc;
+    padding: 2px 0px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
