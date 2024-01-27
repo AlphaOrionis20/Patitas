@@ -3,12 +3,12 @@ import React from 'react'
 
 interface botaoInterface{
     texto:string;
-    onClick: VoidFunction;
+    onClick: VoidFunction;    
 }
 
 function Botao({texto,onClick}:botaoInterface) {
   return (
-    <button className='botao' onClick={onClick}>
+    <button onClick={onClick} className='botao'>
         {texto}
     </button>
   )

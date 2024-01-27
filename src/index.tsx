@@ -8,13 +8,25 @@ import Cadastrar from './pages/Cadastrar/Cadastrar';
 import ConfirmarEmail from './pages/ConfirmarEmail/ConfirmarEmail';
 import EmailConfirmado from './pages/EmailConfirmado/EmailConfirmado';
 import Inicio from './pages/Inicio/Inicio';
+import Upload from './pages/Upload/Upload';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Inicio/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Inicio/>}/>
+        <Route path='Login' element={<Login/>}/>
+        <Route path='Cadastrar' element={<Cadastrar/>}/>
+        <Route path='ConfirmarEmail' element={<ConfirmarEmail/>}/>
+        <Route path='EmailConfirmado' element={<EmailConfirmado/>}/>
+        <Route path='Upload' element={<Upload/>}/>
+
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

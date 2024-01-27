@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #154962;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+.caixaItens{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.caixaItens li img{
+    width: 30px;
+}
+.navDiv{
+    width: 100%;
+    padding: 16px 30px;
+}

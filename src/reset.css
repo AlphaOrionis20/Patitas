@@ -3,6 +3,9 @@
   box-sizing: border-box;
 }
 
+a{
+  width: 100%;
+}
 html,
 body,
 div,
@@ -90,6 +93,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,

@@ -6,6 +6,8 @@ import Botao from "../../components/Botao/Botao";
 import LogoPatitas from "../../components/LogoPatitas/LogoPatitas";
 import fotoInicio from "../../assets/imagens/inicio.png";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Cadastrar from "../Cadastrar/Cadastrar";
 
 export default function Login() {
   const [login,setLogin] = useState("")
@@ -24,8 +26,12 @@ export default function Login() {
         <p className="esqueciSenha">Esqueceu sua senha?</p>
       </div>
       <div className="botaoConteiner">
+      <NavLink to={"/Upload"}>
       <Botao texto="Entrar" onClick={() => {}} />
+      </NavLink>
+      <NavLink to={"/Cadastrar"}>
       <Botao texto="Cadastrar" onClick={() => {}} />
+      </NavLink>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import perfil from "../../assets/logos/u_home-alt (2).png";
 import cpfLogo from "../../assets/logos/u_home-alt (3).png";
 import emailLogo from "../../assets/logos/u_home-alt (4).png";
 import "./style.css"
+import { NavLink } from "react-router-dom";
 
 
 
@@ -37,7 +38,9 @@ export default function Cadastrar(){
                 </div>
             </div>
             <div className="botaoConteiner">
+                <NavLink to={"/ConfirmarEmail"}>
                 <Botao texto="Entrar" onClick={() => {}}/>
+                </NavLink>
             </div>
 
             <div></div>

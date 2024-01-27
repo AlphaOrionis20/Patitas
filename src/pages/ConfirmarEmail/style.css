@@ -4,14 +4,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 78px;
 }
 .confirmarDiv .botaoConteiner{
     width: 69%;
-    height: 39px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
 .confirmarDiv .imagemConteiner{
     width: 50%;
