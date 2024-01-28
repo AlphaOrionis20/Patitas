@@ -36,3 +36,7 @@ export const BotaoConteiner_=styled.div`
     padding-bottom: 96px;
     align-self: center;
 `
+export const Voltar_=styled.p`
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #154962;
+`

@@ -1,11 +1,11 @@
 import styled from "styled-components"
 export const BotaoConfirmar_ = styled.button`
     all: unset;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     background-color: #053d58;
     color: #E6E8E9;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 0 10px 0;
     border-radius: 18px;
     font-size: 16px;
     line-height: 29px;

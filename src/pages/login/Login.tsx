@@ -8,13 +8,13 @@ import fotoInicio from "../../assets/imagens/inicio.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Cadastrar from "../Cadastrar/Cadastrar";
-import { BotaoConteiner_, EsqueciSenha_, Formulario_, ImagemConteiner_ } from "./style";
+import { BotaoConteiner_, EsqueciSenha_, Formulario_, ImagemConteiner_, Login_ } from "./style";
 
 export default function Login() {
   const [login,setLogin] = useState("")
   const [senha,setSenha] = useState("")
   return (
-    <div className="loginDiv">
+    <Login_>
       <ImagemConteiner_>
         <LogoPatitas></LogoPatitas>
       </ImagemConteiner_>
@@ -34,6 +34,6 @@ export default function Login() {
       <Botao texto="Cadastrar" onClick={() => {}} />
       </NavLink>
       </BotaoConteiner_>
-    </div>
+    </Login_>
   );
 }
