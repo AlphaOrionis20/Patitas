@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import './style.css'
 import React from 'react'
+import { BotaoConfirmar_ } from './style';
 
 interface botaoConfirmarInterface{
     texto:string;
@@ -9,9 +9,9 @@ interface botaoConfirmarInterface{
 
 function BotaoConfirmar({texto,onClick}:botaoConfirmarInterface) {
   return (
-    <button className='botaoConfirmar' onClick={onClick} >
+    <BotaoConfirmar_ className='botaoConfirmar' onClick={onClick} >
       {texto}
-    </button>
+    </BotaoConfirmar_>
   )
 }
 

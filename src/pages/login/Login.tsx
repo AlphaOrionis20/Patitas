@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style";
 import { Input } from "../../components/Input/Input";
 import lock from "../../assets/logos/lock.png";
 import cat from "../../assets/logos/cat.png";
@@ -8,31 +8,32 @@ import fotoInicio from "../../assets/imagens/inicio.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Cadastrar from "../Cadastrar/Cadastrar";
+import { BotaoConteiner_, EsqueciSenha_, Formulario_, ImagemConteiner_ } from "./style";
 
 export default function Login() {
   const [login,setLogin] = useState("")
   const [senha,setSenha] = useState("")
   return (
     <div className="loginDiv">
-      <div className="imagemConteiner">
+      <ImagemConteiner_>
         <LogoPatitas></LogoPatitas>
-      </div>
-      <div className="imagemConteiner">
+      </ImagemConteiner_>
+      <ImagemConteiner_>
         <img src={fotoInicio} />
-      </div>
-      <div className="formulario">
+      </ImagemConteiner_>
+      <Formulario_>
         <Input value={login} setValue={setLogin} label="Login" placeholder="Digite um" id="nome" img={cat} type='email' />
         <Input value={senha} setValue={setSenha} label="Senha" placeholder="Digite um" id="nome" img={lock} type='password' /> 
-        <p className="esqueciSenha">Esqueceu sua senha?</p>
-      </div>
-      <div className="botaoConteiner">
+        <EsqueciSenha_ >Esqueceu sua senha?</EsqueciSenha_>
+      </Formulario_>
+      <BotaoConteiner_>
       <NavLink to={"/Upload"}>
       <Botao texto="Entrar" onClick={() => {}} />
       </NavLink>
       <NavLink to={"/Cadastrar"}>
       <Botao texto="Cadastrar" onClick={() => {}} />
       </NavLink>
-      </div>
+      </BotaoConteiner_>
     </div>
   );
 }

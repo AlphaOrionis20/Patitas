@@ -1,5 +1,6 @@
-import './style.css'
+
 import React from 'react'
+import { Botao_ } from './style';
 
 interface botaoInterface{
     texto:string;
@@ -8,9 +9,9 @@ interface botaoInterface{
 
 function Botao({texto,onClick}:botaoInterface) {
   return (
-    <button onClick={onClick} className='botao'>
+    <Botao_ onClick={onClick} >
         {texto}
-    </button>
+    </Botao_>
   )
 }
 

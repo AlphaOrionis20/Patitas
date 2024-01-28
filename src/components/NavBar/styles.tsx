@@ -1,4 +1,5 @@
-.header{
+import styled from "styled-components";
+export const Header_=styled.div`
     display: flex;
     justify-content: flex-end;
     background-color: #154962;
@@ -6,17 +7,17 @@
     bottom: 0;
     left: 0;
     z-index: 10;
-}
-.caixaItens{
+`
+export const CaixaItens_=styled.ul`
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-}
-.caixaItens li img{
-    width: 30px;
-}
-.navDiv{
+`
+export const NavDiv_=styled.nav`
     width: 100%;
     padding: 16px 30px;
-}
+`
+export const Imagem_=styled.img`
+    width: 30px;
+`

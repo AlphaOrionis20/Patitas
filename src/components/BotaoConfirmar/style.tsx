@@ -1,4 +1,5 @@
-.botaoConfirmar{
+import styled from "styled-components"
+export const BotaoConfirmar_ = styled.button`
     all: unset;
     max-width: 100%;
     display: flex;
@@ -13,4 +14,4 @@
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+`

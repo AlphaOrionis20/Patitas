@@ -1,23 +1,24 @@
 import LogoPatitas from "../../components/LogoPatitas/LogoPatitas";
 import dogPaw from "../../assets/imagens/dogPaw.png";
 import BotaoConfirmar from "../../components/BotaoConfirmar/BotaoConfirmar";
-import "./style.css"
+import "./style"
 import { NavLink } from "react-router-dom";
+import { BotaoConteiner_, Email_, ImagemConteiner_ } from "./style";
 
 export default function EmailConfirmado() {
   return (
-    <div className="emailDiv">
-        <div className="imagemConteiner">
+    <Email_>
+        <ImagemConteiner_>
             <LogoPatitas></LogoPatitas>
-        </div>
-        <div className="imagemConteiner">
+        </ImagemConteiner_>
+        <ImagemConteiner_>
             <img src={dogPaw} />
-        </div>
-        <div className="botaoConteiner">
+        </ImagemConteiner_>
+        <BotaoConteiner_ >
             <NavLink to={"/Login"}>
             <BotaoConfirmar texto="E-mail confirmado" onClick={() => {}}/>
             </NavLink>
-        </div>
-    </div>
+        </BotaoConteiner_>
+    </Email_>
   );
 }

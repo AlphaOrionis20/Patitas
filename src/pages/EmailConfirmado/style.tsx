@@ -1,4 +1,6 @@
-.emailDiv{
+import styled from "styled-components";
+
+export const Email_=styled.div`
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -6,14 +8,14 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 78px;
-}
-.emailDiv .botaoConteiner{
+`
+export const BotaoConteiner_=styled.div`
     width: 69%;
-}
-.emailDiv .imagemConteiner{
+`
+export const ImagemConteiner_=styled.div`
     width: 77%;
     display: flex;
     justify-content: center;
     transform: translateY(32px);
     pointer-events: none; 
-}
+`

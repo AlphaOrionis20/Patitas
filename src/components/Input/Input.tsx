@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './style.css'
+import { CaixaInput_, Cat_, InputConteiner_, Input_, LabelInput_, PaddingInput_ } from './style';
 
 interface inputInterface {
     img: string;
@@ -14,20 +14,19 @@ interface inputInterface {
 
 const Input = ({img,placeholder,label,id,value,setValue,type="text"}:inputInterface) => {
   return (
-    <div className='caixaInput'>
-        <label className='labelInput' htmlFor={id}>{label}</label>
-        <div className='paddingInput'>
-          <div className='inputConteiner'>
-              <img className='cat' src={img} alt=''/>
-              <input value={value} className="input" type="text" id={id} placeholder={placeholder} onChange={(event)=>{
+    <CaixaInput_>
+        <LabelInput_ htmlFor={id}>{label}</LabelInput_>
+        <PaddingInput_>
+          <InputConteiner_ >
+              <Cat_ src={img} alt=''/>
+              <Input_ value={value} className="input" type="text" id={id} placeholder={placeholder} onChange={(event)=>{
                 const target=event.target
                 setValue(target.value)
               }
             }/>
-          </div>
-        </div>
-        
-    </div>
+          </InputConteiner_>
+        </PaddingInput_>
+    </CaixaInput_>
 
   )
 }

@@ -1,37 +1,38 @@
-.cadastrarDiv{
+import styled from "styled-components";
+
+export const CadastrarDiv_=styled.div`
     width: 100vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.cadastrarDiv .botaoConteiner{
-    width: 75%;
+`
+export const BotaoConteiner_=styled.div`
+     width: 75%;
     display: flex;
     flex-direction: column;
     gap: 12px;
-}
-.cadastrarDiv .imagemConteiner{
+`
+export const ImagemConteiner_=styled.div`
     width: 50%;
     margin-bottom: 6px;
-}
-.cadastrarDiv .formulario{
+`
+export const Formulario_=styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: flex-end;
     margin-bottom: 90px;
-}
-.cadastrarDiv .termos{
+`
+export const Termos_=styled.label`
     color: #154962;
-
-}
-.cadastrarDiv .checkbox{
+`
+export const CheckBox_=styled.div`
     align-self: center;
     margin-top: 30px;
     font-size: 16px;
     display: flex;
     align-items: center;
-}
+`

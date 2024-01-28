@@ -1,17 +1,18 @@
 import React from "react";
 import LogoPatitas from "../../components/LogoPatitas/LogoPatitas";
-import "./style.css"
+import "./style"
 import { useNavigate, useNavigation } from "react-router-dom";
+import { ImagemConteiner_, Inicio_ } from "./style";
 
 
 export default function Inicio() {
   const navegator = useNavigate()
   React.useEffect(()=>{setTimeout(()=>{navegator("Login")},2000)},[])
   return (
-    <div className="inicioDiv">
-        <div className="imagemConteiner">
+    <Inicio_>
+        <ImagemConteiner_>
             <LogoPatitas></LogoPatitas>
-        </div>
-    </div>
+        </ImagemConteiner_>
+    </Inicio_>
   );
 }
