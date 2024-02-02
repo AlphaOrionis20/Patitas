@@ -24,7 +24,6 @@ root.render(
         <Route path='ConfirmarEmail' element={<ConfirmarEmail/>}/>
         <Route path='EmailConfirmado' element={<EmailConfirmado/>}/>
         <Route path='Upload' element={<Upload/>}/>
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

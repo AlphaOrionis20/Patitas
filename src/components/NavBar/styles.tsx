@@ -21,3 +21,11 @@ export const NavDiv_=styled.nav`
 export const Imagem_=styled.img`
     width: 30px;
 `
+export const FecharMenu_=styled.div`
+    top:0;
+    width: 40%;
+    height: 100%;
+    left:0;
+    position: fixed;
+    background-color: #000000;
+`

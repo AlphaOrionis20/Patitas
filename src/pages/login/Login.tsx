@@ -7,7 +7,6 @@ import LogoPatitas from "../../components/LogoPatitas/LogoPatitas";
 import fotoInicio from "../../assets/imagens/inicio.png";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import Cadastrar from "../Cadastrar/Cadastrar";
 import { BotaoConteiner_, EsqueciSenha_, Formulario_, ImagemConteiner_, Login_ } from "./style";
 
 export default function Login() {
