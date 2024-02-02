@@ -10,6 +10,7 @@ import EmailConfirmado from './pages/EmailConfirmado/EmailConfirmado';
 import Inicio from './pages/Inicio/Inicio';
 import Upload from './pages/Upload/Upload';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Sair_ } from './components/MenuPerfil/style';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,6 +25,8 @@ root.render(
         <Route path='ConfirmarEmail' element={<ConfirmarEmail/>}/>
         <Route path='EmailConfirmado' element={<EmailConfirmado/>}/>
         <Route path='Upload' element={<Upload/>}/>
+        <Route path='Login' element={<Sair_/>}/>
+
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

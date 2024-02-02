@@ -27,5 +27,5 @@ export const FecharMenu_=styled.div`
     height: 100%;
     left:0;
     position: fixed;
-    background-color: #000000;
+    background-color: transparent;
 `
